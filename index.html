@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01068d5ffc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            Partify
+            </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__banner">
+                <img src="images/dodge_ram_banner1.jpg" alt="dodge_banner">
+            </div>
+            <div class="main__form">
+                <div class="main__form-container">
+                    <form>
+                        <div class="main__form--categories">
+                            <div class="main__form--year-details">
+                                <select id="yearDropdown">
+                                    <option>Select Year</option>
+                                </select>
+                            </div>
+                            <div class="main__form--make-details">
+                                <select id="makeDropdown" disabled>
+                                    <option>Select Make</option>
+                                </select>
+                            </div>
+                            <div class="main__form--model-details">
+                                <select id="modelDropdown" disabled>
+                                    <option>Select Model</option>
+                                </select>
+                            </div>
+                            <div class="main__form--product-details">
+                                <select id="productDropdown" disabled>
+                                    <option>Select Product Type</option>
+                                </select>
+                            </div>
+                            <div class="main__form--browse-btn">
+                                <a
+                                    id="browseAll"
+                                    type="button"
+                                    class="main__browse-btn disabled-link"
+                                    href="#">
+                                    Browse Available Parts
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main__footer">
+                <div class="main__footer-container">
+                    <h2>Follow Us</h2>
+                    <div class="main__footer-icons">
+                        <a href="https://www.facebook.com/partifyusa">
+                            <div class="main__footer-icons">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                         </a>
+                         <a href="https://www.instagram.com/partifyusa/">
+                            <div class="main__footer-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.tiktok.com/@partifyusa">
+                            <div class="main__footer-icons">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@partify">
+                            <div class="main__footer-icons">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <h3>Copyright © 2024 Partify</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
