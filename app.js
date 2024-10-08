@@ -91,6 +91,7 @@ fetch('dataset.csv')
                     selectedProduct = productDropdown.value;
                     console.log('selectedProduct', selectedProduct);
                     if(selectedProduct !== 'Select Product Type') {
+                        browseAllLink.classList.add('disabled-link');
                         const url = getUrlForProductType(individual_data, selectedYear, selectedMake, selectedModel, selectedProduct);
                         if (url) {
                             window.location.href = url;
